@@ -568,7 +568,8 @@ class kriging(matrixops):
                 ax.plot_wireframe(X, Y, ZT, rstride=3, cstride=3)
             if show:
                 pylab.show()
-
+        return plot, errplot
+    
     def saveFigure(self, name=None):
         '''
         Similar to plot, except that figures are saved to file
